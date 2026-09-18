@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>メニュー｜焼き鳥 ◯◯屋</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .menu-list { display: grid; gap: 16px; }
+    .menu-item {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 14px;
+      align-items: center;
+    }
+    .menu-item .placeholder { aspect-ratio: 1; font-size: 0.75rem; }
+    .menu-item h3 { margin: 0; font-size: 1.15rem; }
+    .menu-item .price {
+      font-family: var(--font-display);
+      color: var(--noren);
+      font-size: 1.3rem;
+    }
+    .menu-item p { margin: 2px 0 0; color: var(--muted); font-size: 0.9rem; }
+    .topping { list-style: none; padding: 0; margin: 0; }
+    .topping li {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed var(--wood);
+      padding: 8px 0;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="site-title" href="index.html">焼き鳥 ◯◯屋</a>
+      <nav class="site-nav">
+        <a href="index.html">トップ</a>
+        <a href="menu.html" aria-current="page">メニュー</a>
+        <a href="access.html">アクセス</a>
+        <a href="lottery.html">当選番号</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>メニュー</h2>
+    <!-- TODO: 品目・価格・写真は仮。決まり次第差し替え -->
+    <div class="menu-list">
+      <div class="menu-item board">
+        <div class="placeholder">写真</div>
+        <div>
+          <h3>もも（タレ・塩）</h3>
+          <div class="price">¥500</div>
+          <p>2本セット。ジューシーな定番。</p>
+        </div>
+      </div>
+      <div class="menu-item board">
+        <div class="placeholder">写真</div>
+        <div>
+          <h3>ねぎま</h3>
+          <div class="price">¥500</div>
+          <p>2本セット。</p>
+        </div>
+      </div>
+      <div class="menu-item board">
+        <div class="placeholder">写真</div>
+        <div>
+          <h3>つくね</h3>
+          <div class="price">¥500</div>
+          <p>2本セット。</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>トッピング</h2>
+    <ul class="topping board">
+      <li><span>チーズ</span><span>+¥100</span></li>
+      <li><span>卵黄</span><span>+¥100</span></li>
+      <li><span>七味・山椒</span><span>無料</span></li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">焼き鳥 ◯◯屋｜第77回駒場祭 ◯年◯組</footer>
+</body>
+</html>
