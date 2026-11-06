@@ -2,7 +2,7 @@
 // 番号はすべて5桁で、digits は「下何桁を照合するか」。
 const LOTTERY = {
   round: "第2回",
-  drawDate: "11月◯日 抽選済",
+  drawDate: "毎日抽選",
   prizes: [
     { rank: 4, prize: "タレ増量", digits: 1, numbers: ["7"] },
     { rank: 3, prize: "50円引き", digits: 2, numbers: ["38", "61"] },
